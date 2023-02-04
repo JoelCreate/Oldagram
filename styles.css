@@ -1,3 +1,135 @@
-body{
-    background-color: red;;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+body,html{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f4f4f4;
+    font-size: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.app-container{
+    background: #fff;
+    width: 500px;
+    height: 100vh;
+    margin: 0 auto;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.25);
+}
+
+.container{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*******************
+    Typography
+*******************/
+
+p{
+    padding: 0px;
+    margin: 0px;
+}
+
+.text-bold{
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.text-lite{
+    font-weight: 400;
+}
+
+/*******************
+    Logo Bar
+*******************/
+
+.logo-bar{
+    border-bottom: 1.35px solid #c6c6c6;
+}
+
+#logo{
+    background: url('/img/logo.png') center center no-repeat;
+    width: 150px;
+    height: 60px;
+    background-size: contain;
+}
+
+#user-avatar{
+    background: url('/img/user-avatar.png') center center no-repeat;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+/*******************
+    Post Info
+*******************/
+
+.post{
+    display: flex;
+}
+
+#vangogh-avatar{
+    background: url('/img/avatar-vangogh.jpg') center center no-repeat;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+#post-vangogh{
+    background: url('/img/post-vangogh.jpg') center center no-repeat;
+    width:500px;
+    height: 500px;   
+    background-size: contain; 
+    margin: 0px;
+}
+
+/*******************
+    Post Icons
+*******************/
+
+.icons .container{
+    justify-content: unset;
+}
+
+#like-icon,
+#comment-icon,
+#message-icon{
+    margin: 10px 5px 10px 0px;
+    width: 30px;
+    height: 30px;
+}
+
+
+#like-icon{
+    background: url('/img/icon-heart.png') center center no-repeat;
+    background-size: contain;
+}
+
+#comment-icon{
+    background: url('/img/icon-comment.png') center center no-repeat;
+    background-size: contain;
+}
+
+#message-icon{
+    background: url('/img/icon-dm.png') center center no-repeat;
+    background-size: contain;
+}
+
+.comments-container{
+    padding: 0px 15px;
+}
+
+.like-count {
+    margin-bottom: 7px;
 }
